@@ -1,0 +1,10 @@
+adding ssl certificate to RPI
+
+
+cp rootCA.crt /usr/share/ca-certificates/voip.crt
+ vi /etc/ca-certificates.conf
+add voip.crt
+ update-ca-certificates --fresh
+wget https://www.voip.minikube.com
+--no-check-certificate
+
